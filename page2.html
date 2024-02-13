@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sou chin valentineday</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>ຮັກນະໄວລຸ້ນ</p>
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div id="x" class="card">
+                <div class="text">Sou Chin </br> Valentine's Day! <br/> love you so much</div>
+                <div class="heart" </div>
+                </div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div style="display: none;">
+        <audio  id="myAudio">
+            <source src="I'ts You - Ali Gatie (Lyrics) Lirik Lagu.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+
+</body>
+<script>
+    var container = document.getElementsByClassName("container");
+    const audio = document.getElementById("myAudio");
+    audio.play()
+    var x = document.getElementById("x");
+
+    document.onclick = function () {
+        x.classList.add("show")
+        setTimeout(() => {
+            x.classList.remove("show");
+        }, 5000);
+        
+    };
+
+
+</script>
+
+</html>
